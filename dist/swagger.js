@@ -15,7 +15,7 @@ const options = {
         },
         servers: [{ url: process.env.NODE_ENV === "production" ? "https://pincode-lookup-api.onrender.com" : "http://localhost:3000/api/v1" }]
     },
-    apis: ["./dist/routes/**/*.js"]
+    apis: ["./src/routes/**/*.ts"],
 };
 const swaggerSpec = (0, swagger_jsdoc_1.default)(options);
 exports.default = swaggerSpec;
