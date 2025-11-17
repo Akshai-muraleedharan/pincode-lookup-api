@@ -17,7 +17,7 @@ const options = {
         },
         servers: [{ url: process.env.NODE_ENV === "production" ? "https://pincode-lookup-api.onrender.com" : "http://localhost:3000/api/v1" }]
     },
-    apis: ["./src/routes/**/*.ts"],
+    apis: ["./dist/routes/**/*.js"],
 }
 
 
