@@ -14,7 +14,7 @@ const options = {
         },
         servers: [{ url: "https://pincode-lookup-api.onrender.com/api/v1" }]
     },
-    apis: ["./index/*.ts", "./src/routes/*.ts", "./src/controllers/*.ts"]
+    apis: ["./index/*.js", "./src/routes/*.js", "./src/controllers/*.js"]
 };
 const swaggerSpec = (0, swagger_jsdoc_1.default)(options);
 exports.default = swaggerSpec;
