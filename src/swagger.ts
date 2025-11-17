@@ -3,7 +3,7 @@ import swaggerJSDoc from "swagger-jsdoc";
 
 
 
-const apiPaths = process.env.NODE_ENV === "production" ? ["./dist/routes/**/*.js"] : ["./dist/routes/**/*.ts"]
+const apiPaths = process.env.NODE_ENV === "production" ? ["./dist/routes/**/*.js"] : ["./src/routes/**/*.ts"];
 
 
 

@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const swagger_jsdoc_1 = __importDefault(require("swagger-jsdoc"));
-const apiPaths = process.env.NODE_ENV === "production" ? ["./dist/routes/**/*.js"] : ["./dist/routes/**/*.ts"];
+const apiPaths = process.env.NODE_ENV === "production" ? ["./dist/routes/**/*.js"] : ["./src/routes/**/*.ts"];
 const options = {
     definition: {
         openapi: "3.0.0",
