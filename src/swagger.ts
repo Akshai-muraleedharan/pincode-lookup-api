@@ -10,7 +10,7 @@ const options = {
             version: "1.0.0",
             description: "A sample API with swagger documentation"
         },
-        servers: [{ url: "http://localhost:3000/api/v1" }, { url: "https://pincode-lookup-api.onrender.com/api/v1" }]
+        servers: [{ url: "https://pincode-lookup-api.onrender.com/api/v1" }]
     },
     apis: ["./index/*.ts", "./src/routes/*.ts", "./src/controllers/*.ts"]
 }
