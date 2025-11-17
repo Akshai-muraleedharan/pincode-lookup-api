@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const swagger_jsdoc_1 = __importDefault(require("swagger-jsdoc"));
+const path_1 = __importDefault(require("path"));
 const apiPaths = process.env.NODE_ENV === "production" ? ["./dist/routes/**/*.js"] : ["./src/routes/**/*.ts"];
 const options = {
     definition: {
@@ -15,7 +16,7 @@ const options = {
         },
         servers: [{ url: process.env.NODE_ENV === "production" ? "https://pincode-lookup-api.onrender.com" : "http://localhost:3000/api/v1" }]
     },
-    apis: ["./dist/routes/**/*.js"],
+    apis: [path_1.default.join(__dirname, "./*.js")],
 };
 const swaggerSpec = (0, swagger_jsdoc_1.default)(options);
 exports.default = swaggerSpec;
