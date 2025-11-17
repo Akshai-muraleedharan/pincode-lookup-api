@@ -20,7 +20,7 @@ export const router: Router = express()
  *               default: 685512
  *      responses:
  *       200:
- *          description: verify Voter ID
+ *          description: verify postal pincode
  * 
  */
 

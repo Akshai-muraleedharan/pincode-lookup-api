@@ -52,6 +52,7 @@ app.get("/", (_req, res) => __awaiter(void 0, void 0, void 0, function* () {
     res.send("Hai there, API is running...");
 }));
 app.use("/api-docs", swagger_ui_express_1.default.serve, swagger_ui_express_1.default.setup(swagger_1.default));
+app.get("/api-docs.json", (_req, res) => res.json(swagger_1.default));
 app.use("/api/v1", routes_1.router);
 // Start server
 app.listen(PORT, () => {

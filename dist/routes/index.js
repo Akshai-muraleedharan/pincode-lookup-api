@@ -22,7 +22,7 @@ exports.router = (0, express_1.default)();
  *               default: 685512
  *      responses:
  *       200:
- *          description: verify Voter ID
+ *          description: verify postal pincode
  *
  */
 exports.router.get("/pincode", pincodeLookupController_1.pincodeLookup);
