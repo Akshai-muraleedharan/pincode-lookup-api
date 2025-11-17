@@ -3,7 +3,7 @@ import swaggerJSDoc from "swagger-jsdoc";
 
 
 
-const apiPaths = process.env.NODE_ENV === "production" ? ["./dist/routes/**/*.js"] : ["./dist/routes/**/*.ts"]
+const apiPaths = ["./dist/routes/**/*.js"]
 
 
 
@@ -15,7 +15,7 @@ const options = {
             version: "1.0.0",
             description: "A sample API with swagger documentation"
         },
-        servers: [{ url: process.env.NODE_ENV === "production" ? "https://pincode-lookup-api.onrender.com/api/v1" : "http://localhost:3000/api/v1" }]
+        servers: [{ url: "https://pincode-lookup-api.onrender.com/api/v1" }]
     },
     apis: apiPaths
 }
